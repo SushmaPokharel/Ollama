@@ -9,4 +9,3 @@ headers = {"x-api-key": os.getenv("API_KEY"), "Content-type": "application/json"
 
 response = requests.post(url, headers=headers)
 print(response.json())
-print("hello")
