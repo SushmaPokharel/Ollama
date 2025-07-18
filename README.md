@@ -17,3 +17,12 @@ This is a FastAPI-based backend project that integrates with the Ollama LLM (e.g
 python -m venv venv
 source venv/bin/activate  # For Windows: venv\Scripts\activate
 ```
+
+2. **Install dependencies**:
+   pip install fastapi uvicorn ollama
+
+3. **Run the API server**:
+   uvicorn main:app --reload
+
+4. **Send a POST request**:
+   curl -X POST "http://localhost:8000/generate?prompt=Hello"
